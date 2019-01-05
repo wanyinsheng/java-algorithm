@@ -14,7 +14,7 @@ public class IsPowerOfThree {
 	
 	static boolean isPowerOfThree(int n) {
 		boolean flag=false;
-		int i=1;
+		long i=1;
 		while(i<=n) {
 			if(i==n) {
 				flag=true;
