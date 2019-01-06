@@ -5,8 +5,7 @@ package com.wanali.string;
  * 输入: "hello" 
  * 输出: "olleh" 
  * 输入: "A man, a plan, a canal: Panama" 
- * 输出:
- * "amanaP :lanac a ,nalp a ,nam A"
+ * 输出: "amanaP :lanac a ,nalp a ,nam A"
  * 
  * @author wan_ys
  *
