@@ -18,6 +18,7 @@ public class SortArrayByParity2 {
 	static int[] sortArrayByParity(int[] A) {
 		//题目已经说明是2n个数字
 		int len = A.length;
+		//新定义一个存放奇数和偶数的数组
 		int[] oddNum = new int[len / 2];
 		int[] evenNum = new int[len / 2];
 		int even = 0;
@@ -28,13 +29,13 @@ public class SortArrayByParity2 {
 			} else {
 				oddNum[odd++] = A[i];
 			}
-			
 		}
 		
 		System.out.println(Arrays.toString(evenNum));
 		System.out.println(Arrays.toString(oddNum));
 		for (int i = 0; i < A.length; i++) {
 			if(i%2==0) {
+				//倒着把该数组赋回A[i],比如偶数的数组为2,则最后一个元素的索引为2-1，故使用--even
 				A[i]=evenNum[--even];
 			}else {
 				A[i]=oddNum[--odd];
