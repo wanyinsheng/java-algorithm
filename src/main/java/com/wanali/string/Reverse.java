@@ -10,7 +10,7 @@ public class Reverse {
 		System.out.println(reverse(123));
 		System.out.println(reverse(-123));
 		System.out.println(reverse(120));
-		//2的31次方-1
+		//2的31次方-1,最高位位符号位
 		System.out.println(reverse(2147483647));
 	}
 
