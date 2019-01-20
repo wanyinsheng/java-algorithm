@@ -10,7 +10,7 @@ package com.wanali.array;
  */
 public class MaxSubArray {
 	public static void main(String[] args) {
-		int[] nums = new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+		int[] nums = new int[] {-2,1,-3,4,-1,2,1,-5,4 };
 		System.out.println(maxSubArray(nums));
 		System.out.println(maxSubArray1(nums));
 	}
@@ -23,7 +23,7 @@ public class MaxSubArray {
 	 */
 	static int maxSubArray(int[] nums) {
 		int sum;
-		int max = 0;
+		int max = Integer.MIN_VALUE;
 		for (int i = 0; i < nums.length; i++) {// 子序列左边界
 			for (int j = i; j < nums.length; j++) {// 子序列右边界
 				sum = 0;
@@ -45,7 +45,7 @@ public class MaxSubArray {
 	 * @return
 	 */
 	static int maxSubArray1(int[] nums) {
-		int max = 0;
+		int max =Integer.MIN_VALUE;
 		int sum;
 		for (int i = 0; i < nums.length; i++) {
 			sum = 0;
