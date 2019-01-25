@@ -16,7 +16,6 @@ package com.wanali.math;
     所以 里面的5的个数为 int(31/(5**1)) +  int(31/(5**2))
     所以 只要先找个一个 5**x < n 的x的最大数 然后按上面循环加起来
  * @author wan_ys
- *
  * 2019年1月24日下午10:19:47
  */
 public class TrailingZeroes {
