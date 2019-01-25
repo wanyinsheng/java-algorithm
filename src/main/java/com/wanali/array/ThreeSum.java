@@ -56,6 +56,9 @@ public class ThreeSum {
 
 				} else if (nums[j] + nums[k] > -nums[i]) { // 如果和大于0
 					k--;
+					while(nums[k]==nums[k+1]) {
+						k--;
+					}
 				} else {// 如果和小于0
 					j++;
 					while(nums[j]==nums[j-1]) {
