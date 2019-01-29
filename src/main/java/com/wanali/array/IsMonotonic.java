@@ -8,13 +8,9 @@ package com.wanali.array;
  * 当给定的数组 A 是单调数组时返回 true，否则返回 false。
  * 
  * 输入：[1,2,2,3] 输出：true 
- * 
  * 输入：[6,5,4,4] 输出：true 
- * 
  * 输入：[1,3,2] 输出：false 
- * 
  * 输入：[1,2,4,5] 输出：true 
- * 
  * 输入：[1,1,1] 输出：true
  * 
  * @author wan_ys
@@ -25,7 +21,7 @@ public class IsMonotonic {
 	public static void main(String[] args) {
 		System.out.println(isMonotonic(new int[] { 1, 2, 2, 3 }));
 		System.out.println(isMonotonic(new int[] { 6, 5, 4, 4 }));
-		System.out.println(isMonotonic(new int[] { 1, 1, 1 }));
+		System.out.println(isMonotonic(new int[] { 1, 3, 2 }));
 		System.out.println(isMonotonic(new int[] { 1, 2, 4, 5 }));
 		System.out.println(isMonotonic(new int[] { 1, 1, 1 }));
 	}
