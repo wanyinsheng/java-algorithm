@@ -1,4 +1,4 @@
-package com.wanali.math;
+package com.wanali.array;
 
 import java.util.Arrays;
 
