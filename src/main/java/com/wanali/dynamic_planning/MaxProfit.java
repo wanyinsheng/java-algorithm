@@ -1,4 +1,4 @@
-package com.wanali.array;
+package com.wanali.dynamic_planning;
 
 /**
  *买卖股票最佳时机
