@@ -3,7 +3,7 @@ package com.wanali.hash_table;
 import java.util.HashMap;
 
 /**
- * 有效的字母异位词
+ * 有效的字母异位词(字母异位词指字母相同，但排列不同的字符串。)
  * 
  * 给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的一个字母异位词。
  * 
@@ -20,7 +20,12 @@ public class IsAnagram {
 		System.out.println(isAnagram("anagram", "nagaram"));
 		System.out.println(isAnagram("rat", "car"));
 	}
-
+	/**
+	 * 哈希表解法，根据字母异位词的定义也可以用排序来解
+	 * @param s
+	 * @param t
+	 * @return
+	 */
 	static boolean isAnagram(String s, String t) {
 		if (s.length() != t.length()) {// 长度不相等肯定不是有效的字母异位词
 			return false;
