@@ -1,8 +1,12 @@
 package com.wanali.array;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
+ * 两数之和
+ * 
  * 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
  * 
  * 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。
@@ -13,7 +17,7 @@ import java.util.Arrays;
  * 
  * @author wan_ys
  *
- * 2019年1月6日下午3:12:26
+ *         2019年1月6日下午3:12:26
  */
 public class TwoSum {
 	public static void main(String[] args) {
@@ -22,12 +26,6 @@ public class TwoSum {
 		System.out.println(Arrays.toString(twoSum(nums, target)));
 	}
 
-	/**
-	 * 
-	 * @param nums
-	 * @param target
-	 * @return
-	 */
 	static int[] twoSum(int[] nums, int target) {
 		int len = nums.length;
 		int[] sub = new int[2];
@@ -40,7 +38,6 @@ public class TwoSum {
 			}
 		}
 		return sub;
-
 	}
 
 }
