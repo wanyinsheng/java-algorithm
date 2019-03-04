@@ -25,18 +25,20 @@ public class IncreasingTriplet {
 	}
 
 	static boolean increasingTriplet(int[] nums) {
-		int len = nums.length - 2;
-		// 少于三个数字时不存在三元子序列
-		if (len < 1) {
-			return false;
-		}
-		for (int i = 0; i < len; i++) {
-			// 判断是否为递增的三元子序列
-			if (nums[i] < nums[i + 1] && nums[i + 1] < nums[i + 2]) {
-				return true;
-			}
-		}
-		return false;
+		int min = Integer.MAX_VALUE;
+        int middle = Integer.MAX_VALUE;
+        for (int i = 0; i < nums.length; i++) {
+        	//先找第一个值，如果找到了第一个值，就不可能在去找中间值
+            if (nums[i] <= min) {
+                min = nums[i];
+                
+            } else if (nums[i] <= middle) {//比第一个数大时，考虑将其看作第二个数
+                middle = nums[i];
+            } else {//比前面的两个数都大那就说明找到三元子序列
+                return true;
+            }
+        }
+        return false;
 	}
 
 }
