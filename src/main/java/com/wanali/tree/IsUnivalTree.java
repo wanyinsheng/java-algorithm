@@ -16,8 +16,6 @@ package com.wanali.tree;
  */
 public class IsUnivalTree {
 	public static boolean isUnivalTree(TreeNode root) {
-		// 除了根节点以外，每个节点都与父节点相同
-		TreeNode node = root;
 		//判断左孩子是否单值
 		//左孩子为空，或者左孩子的值等于父节点并且左子树也是单值的
 		boolean left=root.left==null||root.left.val==root.val&&(isUnivalTree(root.left));
