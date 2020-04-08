@@ -50,5 +50,4 @@ public class SmallerNumbersThanCurrent {
 		}
 		return result;
 	}
-
 }
